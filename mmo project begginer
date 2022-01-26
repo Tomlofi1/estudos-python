@@ -1,0 +1,38 @@
+monster=['Goblin','King','Knight','Slime']
+sword=10
+shield=30
+health=50
+life= True
+name1= 'Hero'
+def main():
+    print('Hey, Hero what can i help you?')
+    print('Missions!: ')
+    print('1º Mission - Kill 5 Slimes')
+    print('2º Mission - Kill 2 Goblins')
+    print('3º Mission - Kill 2 Knights')
+    print('4º Mission - Defense your partners')
+    res = input('Choose your Mission: ')
+    if res == '1':
+        print('You choose the 1º Mission!')
+        attack()
+    elif res == '2':
+        print('You choose the 2º Mission!')
+        attack()
+    elif res == '3':
+        print('You choose the 3º Mission!')
+        attack()
+    elif res == '4':
+        print('You choose the 4º Mission!')
+        defense()
+    else:
+       print('This Mission do not exist, pls choose between 1, 2, 3')
+
+def attack():
+    print('You attack an enemy -', 'Damage: ', sword)
+    
+def defense():
+    print('Your Shield protect you and your partners!')
+
+loop = True
+while loop:
+    main()
